@@ -1,13 +1,41 @@
 body {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    display: block;
 }
 
-.formContainer {
+.nav-container {
+    background-color: #0795E6;
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+
+}
+
+.div-nav-logo {
+    display: flex;
+    float: left;
+}
+
+nav img {
+    width: 260px;
+    height: 125px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.form-container {
     margin-top: 10%;
     padding: 10px 0;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-
+    margin: 0 auto;
+    width: 80%;
 }
