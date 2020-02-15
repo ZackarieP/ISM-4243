@@ -1,6 +1,7 @@
 * {
     cursor: url(LinkSelect.cur), default;
     font-family: 'Mouse Memoirs', sans-serif;
+    box-sizing: border-box;
 }
 
 .background {
@@ -39,4 +40,30 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+div img {
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin: 10px 10px;
+    /* margin: 20px 0px 0px 20px; */
+    /* width: calc(20% - 20px); */
+    border-radius: 10px;
+
+}
+
+img:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+img::after {
+    transition: border 300ms ease-out 0s;
 }
