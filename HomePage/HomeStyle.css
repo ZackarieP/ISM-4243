@@ -1,3 +1,7 @@
+* {
+    cursor: url(LinkSelect.cur), default;
+}
+
 body {
     font-family: 'Mouse Memoirs', sans-serif;
     font-size: 1.5rem;
@@ -6,6 +10,7 @@ body {
     box-sizing: border-box;
     display: block;
     overflow: hidden;
+
 }
 
 button #nav-btn {
@@ -35,9 +40,25 @@ button {
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    cursor: pointer;
     width: 20%;
     border-radius: 10px;
+}
+
+#actualLogin {
+    background-color: #0795E6;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 20%;
+    border-radius: 10px;
+}
+
+#actualLogin:hover {
+    opacity: 0.8;
 }
 
 button:hover {
@@ -88,6 +109,8 @@ span.psw {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
     padding-top: 60px;
+
+
 }
 
 /* Modal Content/Box */
@@ -98,6 +121,7 @@ span.psw {
     border: 1px solid #888;
     width: 80%;
     /* Could be more or less, depending on screen size */
+
 }
 
 /* The Close Button (x) */
