@@ -12,6 +12,14 @@
     margin: 0;
 }
 
+.column{
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+    height: 800px; 
+}
+
 body {
     background-color: #040714;
 }
