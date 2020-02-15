@@ -1,6 +1,6 @@
 * {
-    overflow: hidden;
     cursor: url(LinkSelect.cur), default;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .background {

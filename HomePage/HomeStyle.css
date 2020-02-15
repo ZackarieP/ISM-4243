@@ -1,9 +1,9 @@
 * {
     cursor: url(LinkSelect.cur), default;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 body {
-    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
