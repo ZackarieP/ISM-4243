@@ -50,6 +50,7 @@ div img {
     margin: 10px 10px;
     /* margin: 20px 0px 0px 20px; */
     /* width: calc(20% - 20px); */
+    border-radius: 10px;
 
 }
 
@@ -59,5 +60,10 @@ img:hover {
     -webkit-transform: scale(1.05);
     /* Safari 3-8 */
     transform: scale(1.05);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
 
+img::after {
+    transition: border 300ms ease-out 0s;
 }
