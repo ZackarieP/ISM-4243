@@ -1,6 +1,8 @@
 * {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
     cursor: url(LinkSelect.cur), default;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .background {
@@ -14,6 +16,7 @@
 
 body {
     background-color: #040714;
+    color: white;
 }
 
 ul {
@@ -39,4 +42,34 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+div#header {
+    padding-bottom: 5%;
+
+}
+
+div.about-info {
+    padding-bottom: 2em;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
