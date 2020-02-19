@@ -1,6 +1,8 @@
 * {
     cursor: url(LinkSelect.cur), default;
     font-family: 'Mouse Memoirs', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .background {
@@ -15,17 +17,21 @@
 .column{
     text-align: center;
     float: left;
-    width: 25%;
+    width: 75%;
     padding: 0px;
     height: 100%; 
 }
 
 .column2{
     text-align: center;
-    float: left;
+    float: right;
     width: 23%;
-    padding: 0px;
     height: 100%; 
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: white;
 }
 
 .SectionsR{
@@ -36,10 +42,12 @@
 }
 
 #h1Right{
+    box-align: center;
     background-color: green;
     color: white;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-radius: 25px;
+    width: 100%;
+    
 }
 
 #pRight{
@@ -72,4 +80,14 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+img{
+    width: 23%;
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
 }
