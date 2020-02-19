@@ -34,15 +34,6 @@ li a:hover {
     background-color: #111;
 }
 
-div>img {
-    float: left;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    margin: 10px 10px;
-    border-radius: 10px;
-}
-
 img:hover {
     -ms-transform: scale(1.05);
     /* IE 9 */
@@ -55,4 +46,13 @@ img:hover {
 
 img::after {
     transition: border 300ms ease-out 0s;
+}
+
+a>img {
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
 }
