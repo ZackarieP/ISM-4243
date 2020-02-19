@@ -2,18 +2,13 @@
     overflow: hidden;
     cursor: url(LinkSelect.cur), default;
     font-family: 'Mouse Memoirs', sans-serif;
-}
-
-.background {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    z-index: -2;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
+    color: white;
     background-color: #040714;
 }
 
@@ -29,7 +24,7 @@ li {
     float: right;
 }
 
-li a {
+li>a {
     display: block;
     color: white;
     text-align: center;
@@ -42,12 +37,33 @@ li a:hover {
     background-color: #111;
 }
 
-div img {
-    padding-top: 10%;
-    padding-left: 10%;
+div>img {
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #2C2E3A;
 }
 
-img {
-    height: 200px;
-    width: 250px;
+img:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+    border-style: solid;
+    border-color: white;
+}
+
+.banner-carousel>img {
+    width: 18%;
+
+}
+
+img::after {
+    transition: border 300ms ease-out 0s;
 }
