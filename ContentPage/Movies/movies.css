@@ -10,8 +10,6 @@
     height: 100vh;
     background-size: cover;
     z-index: -2;
-    padding: 0;
-    margin: 0;
 }
 
 .column {
@@ -19,40 +17,46 @@
     float: left;
     width: 75%;
     padding: 0px;
-    height: 100%; 
+    height: 100%;
 }
 
-.column2{
+.column2 {
     text-align: center;
     float: right;
     width: 23%;
-    height: 100%; 
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    height: 100%;
+    border-radius: 25px;
     background-color: white;
 }
 
-.SectionsR{
+.SectionsR {
     border: grey;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background-image: image("lucasfilm.jpg");
 }
 
-#h1Right{
+div.comment {
+    margin: 15px 0 15px;
+}
+
+div>textarea {
+    width: 250px;
+}
+
+#h1Right {
     box-align: center;
     background-color: green;
     color: white;
     border-radius: 25px;
     width: 100%;
-    
+
 }
 
-#pRight{
+#pRight {
     background-color: white;
 }
+
 body {
     background-color: #040714;
 }
@@ -82,7 +86,7 @@ li a:hover {
     background-color: #111;
 }
 
-img{
+img {
     width: 23%;
     float: left;
     display: grid;
@@ -90,4 +94,14 @@ img{
     grid-gap: 10px;
     margin: 10px 10px;
     border-radius: 10px;
+}
+
+img:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
 }
