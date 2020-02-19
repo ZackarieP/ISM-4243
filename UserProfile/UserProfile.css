@@ -1,18 +1,26 @@
-body{
+* {
+    cursor: url(LinkSelect.cur), default;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+body {
     text-align: center;
     font-family: sans-serif;
     color: black;
     background-color: #0795E6;
 }
-.ProfileCard{
+
+.ProfileCard {
     width: 400px;
     margin: auto;
     background: #ffff;
-    box-shadow:0 4px 10px 0 rgba(0,0,0,0.5) ;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
-.Image-Container{
+
+.Image-Container {
     position: relative;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -20,6 +28,7 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
+
 li {
     float: right;
 }
@@ -36,7 +45,8 @@ li a {
 li a:hover {
     background-color: #111;
 }
-.boxedparagraph p{
+
+.boxedparagraph p {
     text-align: center;
     border-style: ridge;
 }
