@@ -25,28 +25,69 @@
             </ul>
         </nav>
 
-        <div class="tv-images">
-            <img src="/ContentPage/TVShows/showImages/1.jfif">
-            <img src="/ContentPage/TVShows/showImages/2.jfif">
-            <img src="/ContentPage/TVShows/showImages/3.jfif">
-            <img src="/ContentPage/TVShows/showImages/4.jfif">
-            <img src="/ContentPage/TVShows/showImages/5.jfif">
-            <img src="/ContentPage/TVShows/showImages/6.jfif">
-            <img src="/ContentPage/TVShows/showImages/7.jfif">
-            <img src="/ContentPage/TVShows/showImages/8.jfif">
-            <img src="/ContentPage/TVShows/showImages/9.jfif">
-            <img src="/ContentPage/TVShows/showImages/10.jfif">
-            <img src="/ContentPage/TVShows/showImages/11.jfif">
-            <img src="/ContentPage/TVShows/showImages/12.jfif">
-            <img src="/ContentPage/TVShows/showImages/13.jfif">
-            <img src="/ContentPage/TVShows/showImages/14.jfif">
-            <img src="/ContentPage/TVShows/showImages/15.jfif">
-            <img src="/ContentPage/TVShows/showImages/16.jfif">
-            <img src="/ContentPage/TVShows/showImages/17.jfif">
-            <img src="/ContentPage/TVShows/showImages/18.jfif">
-            <img src="/ContentPage/TVShows/showImages/19.jfif">
-            <img src="/ContentPage/TVShows/showImages/20.jfif">
+        <div class="row">
+            <div class="column">
+                <img src="/ContentPage/TVShows/showImages/1.jfif">
+                <img src="/ContentPage/TVShows/showImages/2.jfif">
+                <img src="/ContentPage/TVShows/showImages/3.jfif">
+                <img src="/ContentPage/TVShows/showImages/4.jfif">
+                <img src="/ContentPage/TVShows/showImages/5.jfif">
+                <img src="/ContentPage/TVShows/showImages/6.jfif">
+                <img src="/ContentPage/TVShows/showImages/7.jfif">
+                <img src="/ContentPage/TVShows/showImages/8.jfif">
+                <img src="/ContentPage/TVShows/showImages/9.jfif">
+                <img src="/ContentPage/TVShows/showImages/10.jfif">
+                <img src="/ContentPage/TVShows/showImages/11.jfif">
+                <img src="/ContentPage/TVShows/showImages/12.jfif">
+                <img src="/ContentPage/TVShows/showImages/13.jfif">
+                <img src="/ContentPage/TVShows/showImages/14.jfif">
+                <img src="/ContentPage/TVShows/showImages/15.jfif">
+                <img src="/ContentPage/TVShows/showImages/16.jfif">
+                <img src="/ContentPage/TVShows/showImages/17.jfif">
+                <img src="/ContentPage/TVShows/showImages/18.jfif">
+                <img src="/ContentPage/TVShows/showImages/19.jfif">
+                <img src="/ContentPage/TVShows/showImages/20.jfif">
+            </div>
 
+        <!--This is the far right column-->
+        <div class="column2" style="float: right;">
+            <div class="SectionsR">
+              <h1 id="h1Right">Leave a comment on your favorite films!:</h1>
+              <p id="pRight"></p>
+              <div class="comment">
+                <textarea id="title" type="text " rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
+                <br>
+                <input type="submit" value="Post" onclick="insert()" style="width:50px;" />
+              </div>
+              <div id="display"></div>
+              <script type="text/javascript">
+                var titles = [];
+                var titleInput = document.getElementById("title");
+                var messageBox = document.getElementById("display");
+  
+                function Allow() {
+                  if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value != "") {
+                    user.title.value = "";
+                    alert("Please Enter only alphabets");
+                  }
+                  window.location.reload()
+                }
+  
+                function insert() {
+                  titles.push(titleInput.value);
+                  clearAndShow();
+                }
+  
+                function clearAndShow() {
+                  titleInput.value = "";
+                  messageBox.innerHTML = "";
+                  messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+                }
+  
+              </script>
+  
+            </div>
+          </div>
         </div>
 
     </body>
