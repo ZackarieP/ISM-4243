@@ -12,12 +12,12 @@
     margin: 0;
 }
 
-.column{
+.column {
     text-align: center;
     float: left;
     width: 33.33%;
     padding: 0px;
-    height: 800px; 
+    height: 800px;
 }
 
 body {

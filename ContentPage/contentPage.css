@@ -44,7 +44,7 @@ div>img {
     grid-gap: 10px;
     margin: 10px 10px;
     border-radius: 10px;
-    background-color: #2C2E3A;
+    background-color: #2c2e3a;
 }
 
 img:hover {
@@ -55,15 +55,37 @@ img:hover {
     transform: scale(1.05);
     transition-duration: 300ms;
     transition-timing-function: ease-out;
-    border-style: solid;
-    border-color: white;
 }
 
 .banner-carousel>img {
     width: 18%;
-
 }
 
 img::after {
     transition: border 300ms ease-out 0s;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
