@@ -14,6 +14,14 @@
 
 }
 
+div.comment {
+    margin: 15px 0 15px;
+}
+
+div>textarea {
+    width: 250px;
+}
+
 .column {
     text-align: center;
     float: left;
