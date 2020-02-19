@@ -18,36 +18,80 @@
   <nav>
     <ul>
       <li><a href="/HomePage/Home.html">Logout</a></li>
+<<<<<<< HEAD
       <li><a href="/UserProfile/UserProfile.html">Profile</a></li>
+=======
+      <li><a href="/UserProfile.html">Profile</a></li>
+>>>>>>> Jimmy
       <li><a href="/ContentPage/About/about.html">About</a></li>
       <li><a href="/ContentPage/TVShows/tv.html">TV Shows</a></li>
       <li><a href="/ContentPage/Movies/movies.html">Movies</a></li>
       <li><a href="/ContentPage/contentPage.html">Home</a></li>
     </ul>
-  </nav>
+    <!--Below are the three main movie columns-->
+    <div class="row">
+      <div class="column">
+        <img src="/ContentPage/Movies/Marvel/captainAmerica.jfif">
+        <img src="/ContentPage/Movies/Marvel/captainMarvel.jfif">
+        <img src="/ContentPage/Movies/Marvel/endGame.jfif">
+        <img src="/ContentPage/Movies/Marvel/ironMan.jfif">
+        <img src="/ContentPage/Movies/Pixar/brave.jfif">
+        <img src="/ContentPage/Movies/Pixar/cars.jfif">
+        <img src="/ContentPage/Movies/Pixar/nemo.jfif">
+        <img src="/ContentPage/Movies/Pixar/walle.jfif">
+        <img src="/ContentPage/Movies/Star Wars/aNewHope.jfif">
+        <img src="/ContentPage/Movies/Star Wars/attackOfClones.jfif">
+        <img src="/ContentPage/Movies/Star Wars/cloneWars.jfif">
+        <img src="/ContentPage/Movies/Star Wars/empireStrikesBack.jfif">
+        <img src="/ContentPage/Movies/Star Wars/forceAwakens.jfif">
+        <img src="/ContentPage/Movies/Star Wars/lastJedi.jfif">
+        <img src="/ContentPage/Movies/Star Wars/phantomMenace.jfif">
+        <img src="/ContentPage/Movies/Star Wars/returnOfJedi.jfif">
+        <img src="/ContentPage/Movies/Star Wars/revengeOfSith.jfif">
+        <img src="/ContentPage/Movies/Star Wars/rogueOne.jfif">
+        <img src="/ContentPage/Movies/Star Wars/swRebels.jfif">
+        
 
-  <div class="row">
-    <div class="column" style="background-color:#0795E6;">
-      <h1>
-        <img src="pixarname.png" alt="pixar name logo" height="200px" width="90%"><br>
-      </h1>
-      <p><img src="incredibles2.jpg" alt="incredibles 2" height="100px" width="60%"><br>
-        "Incredibles 2 is a 2018 American computer-animated superhero film produced by Pixar Animation Studios and
-        released by Walt Disney Pictures. Written and directed by Brad Bird, it is the sequel to The Incredibles (2004)
-        and the second full-length installment of the franchise. The story follows the Parr family as they try to
-        restore the public's trust in superheroes while balancing their family life, only to combat a new foe who seeks
-        to turn the populace against all superheroes. Craig T. Nelson, Holly Hunter, Sarah Vowell and Samuel L. Jackson
-        reprise their roles from the first film; newcomers to the cast include Huckleberry Milner, Bob Odenkirk,
-        Catherine Keener and Jonathan Banks. Michael Giacchino returned to compose the score." -Extracted from
-        wikipedia" </p><br>
-      <p><img src="toystory4.jpg" alt="toystory4" height="100px" width="60%"><br>
-        "Toy Story is a 1995 American computer-animated buddy comedy film produced by Pixar Animation Studios and
-        released by Walt Disney Pictures. The feature film directorial debut of John Lasseter, it was the first entirely
-        computer-animated feature film, as well as the first feature film from Pixar. The screenplay was written by Joss
-        Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow from a story by Lasseter, Stanton, Pete Docter, and Joe
-        Ranft. The film features music by Randy Newman, and was executive-produced by Steve Jobs and Edwin Catmull. It
-        features the voices of Tom Hanks, Tim Allen, Don Rickles, Wallace Shawn, John Ratzenberger, Jim Varney, Annie
-        Potts, R. Lee Ermey, John Morris, Laurie Metcalf, and Erik von Detten. " -Extracted from wikipedia </p><br>
+    </div>
+
+     
+        <!--This is the far right column-->
+        <div class="column2" style="float: right;">
+          <div class="SectionsR">
+            <h1 id="h1Right">Leave a comment on your favorite films!:</h1>
+            <p id="pRight"></p>
+            <div class="comment">
+              <textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea><br>
+              <input type="submit" value="Post" onclick="insert()" style="width:50px;" /></form>
+              </div>
+              <div id="display"></div>
+              <script type="text/javascript">
+              var titles = [];
+              var titleInput = document.getElementById("title");
+              var messageBox = document.getElementById("display");
+              function Allow()
+              {
+              if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+              {
+              user.title.value="";
+              alert("Please Enter only alphabets");
+              }
+              window.location.reload()
+              }
+              function insert () {
+              titles.push(titleInput.value);
+              clearAndShow();
+              }
+              function clearAndShow ()
+              {
+              titleInput.value = "";
+              messageBox.innerHTML = "";
+              messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+              }
+              </script>
+
+          </div>
+        </div>
 
 
 
