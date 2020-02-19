@@ -2,6 +2,7 @@
     overflow: hidden;
     cursor: url(LinkSelect.cur), default;
     font-family: 'Mouse Memoirs', sans-serif;
+    box-sizing: border-box;
 }
 
 .background {
@@ -15,6 +16,7 @@
 
 body {
     background-color: #040714;
+    color: white;
 }
 
 ul {
@@ -48,6 +50,5 @@ div img {
 }
 
 img {
-    height: 200px;
-    width: 250px;
+    background-color: grey;
 }
