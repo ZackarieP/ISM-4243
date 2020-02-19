@@ -1,5 +1,3 @@
 function search() {
-    if (document.getElementById('search-bar') == "") {
-        return null;
-    }
+    window.location = ('/ContentPage/contentPage.html');
 }
