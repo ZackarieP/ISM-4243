@@ -12,11 +12,11 @@
   <body>
 
 
-<<<<<<< HEAD
     <nav>
       <ul>
         <li><a href="/HomePage/Home.html">Logout</a></li>
         <li><a href="/UserProfile/UserProfile.html">Profile</a></li>
+        <li><a href="/Store/shop.html">Shop</a></li>
         <li><a href="/ContentPage/About/about.html">About</a></li>
         <li><a href="/ContentPage/TVShows/tv.html">TV Shows</a></li>
         <li><a href="/ContentPage/Movies/movies.html">Movies</a></li>
@@ -24,19 +24,6 @@
       </ul>
     </nav>
 
-=======
-  <nav>
-    <ul>
-      <li><a href="/HomePage/Home.html">Logout</a></li>
-      <li><a href="/UserProfile/UserProfile.html">Profile</a></li>
-      <li><a href="/Store/shop.html">Shop</a></li>
-      <li><a href="/ContentPage/About/about.html">About</a></li>
-      <li><a href="/ContentPage/TVShows/tv.html">TV Shows</a></li>
-      <li><a href="/ContentPage/Movies/movies.html">Movies</a></li>
-      <li><a href="/ContentPage/contentPage.html">Home</a></li>
-    </ul>
-    
->>>>>>> Jimmy
     <!--Below are the three main movie columns-->
     <div class="row">
       <div class="column">
@@ -62,38 +49,42 @@
       </div>
 
 
-        <!--This is the far right column-->
-        <div class="column2" style="float: right;">
-          <div class="SectionsR">
-            <h1 id="h1Right">Leave a comment on your favorite films!:</h1>
-            <p id="pRight"></p>
-            <div class="comment">
-              <textarea id="title" type="text " rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
-              <br>
-              <input type="submit" value="Post" onclick="insert()" style="width:50px;" />
-            </div>
-            
-            <div id="display"></div>
-            <script type="text/javascript">
-              var titles = [];
-              var titleInput = document.getElementById("title");
-              var messageBox = document.getElementById("display");
-              function Allow() {
-                if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value != "") {
-                  user.title.value = "";
-                  alert("Please Enter only alphabets");
-                  }
-                window.location.reload()
-              }             
-             function insert() {
+      <!--This is the far right column-->
+      <div class="column2" style="float: right;">
+        <div class="SectionsR">
+          <h1 id="h1Right">Leave a comment on your favorite films!:</h1>
+          <p id="pRight"></p>
+          <div class="comment">
+            <textarea id="title" type="text " rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
+            <br>
+            <input type="submit" value="Post" onclick="insert()" style="width:50px;" />
+          </div>
+
+          <div id="display"></div>
+          <script type="text/javascript">
+            var titles = [];
+            var titleInput = document.getElementById("title");
+            var messageBox = document.getElementById("display");
+
+            function Allow() {
+              if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value != "") {
+                user.title.value = "";
+                alert("Please Enter only alphabets");
+              }
+              window.location.reload()
+            }
+
+            function insert() {
               titles.push(titleInput.value);
               clearAndShow();
-             }
-              function clearAndShow() {
-                titleInput.value = "";
-                messageBox.innerHTML = "";
-                messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
             }
+
+            function clearAndShow() {
+              titleInput.value = "";
+              messageBox.innerHTML = "";
+              messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+            }
+
           </script>
 
         </div>
