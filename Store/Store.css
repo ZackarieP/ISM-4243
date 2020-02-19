@@ -1,0 +1,74 @@
+.container{
+    width: 100%;
+    overflow: hidden;
+    background: lightskyblue;
+    margin: 20px auto;
+    padding: 20px 0px;
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container ul li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 300px;
+    background: url(/Store/Coming-Soon-Disney-Image.jpg);
+    background-position: center;
+    margin: 40px 40px 0px 40px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.container ul li:hover{
+    opacity: 0.9;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ .navbar li {
+    float: right;
+}
+
+.navbar li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    background-color: #111;
+}
+.container ul li .title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    text-align: center
+}
+
+@media screen and (max-width: 1250px){
+    .container ul li{
+        width: 40%;
+        margin: 40px;
+
+    }
+}
+@media screen and (max-width: 750px){
+    .container {
+        width:100%;
+        padding: 0px;
+    }
+    .container{
+        float: none;
+        width: 90%;
+        margin: 40px auto;
+    }
+}
