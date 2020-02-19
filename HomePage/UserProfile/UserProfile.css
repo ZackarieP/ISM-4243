@@ -1,0 +1,14 @@
+body{
+    font-family: sans-serif;
+    color: black;
+    background-color: blue;
+}
+.ProfileCard{
+    width: 400px;
+    margin: auto;
+    background: #ffff;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.5) ;
+}
+.Image-Container{
+    position: relative;
+}
