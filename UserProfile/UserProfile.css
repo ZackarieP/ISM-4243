@@ -1,4 +1,5 @@
 body{
+    text-align: center;
     font-family: sans-serif;
     color: black;
     background-color: #0795E6;
@@ -34,4 +35,8 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+.boxedparagraph p{
+    text-align: center;
+    border-style: ridge;
 }
