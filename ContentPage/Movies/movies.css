@@ -25,10 +25,7 @@
     float: right;
     width: 23%;
     height: 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-radius: 25px;
     background-color: white;
 }
 
