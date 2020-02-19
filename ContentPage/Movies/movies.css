@@ -15,11 +15,36 @@
 .column{
     text-align: center;
     float: left;
-    width: 33.33%;
+    width: 25%;
     padding: 0px;
-    height: 800px; 
+    height: 100%; 
 }
 
+.column2{
+    text-align: center;
+    float: left;
+    width: 23%;
+    padding: 0px;
+    height: 100%; 
+}
+
+.SectionsR{
+    border: grey;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-image: image("lucasfilm.jpg");
+}
+
+#h1Right{
+    background-color: green;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#pRight{
+    background-color: white;
+}
 body {
     background-color: #040714;
 }
