@@ -59,7 +59,9 @@ a>img {
     transition-timing-function: ease-out;
 }
 
-
+.content-main {
+    margin-left: 10px;
+}
 
 .banner-carousel>img {
     width: 18%;
@@ -67,17 +69,23 @@ a>img {
 }
 
 .banner-carousel {
-    padding-left: 25px;
+    padding-left: 35px;
+    margin-top: 10px;
 }
 
 .banner-main {
     display: block;
     width: 100%;
+    height: 550px;
     /* border-radius: 10px;
     padding-top: 5px;
     padding-left: 3px;
     padding-right: 3px; */
 
+}
+
+.content-carousel {
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
