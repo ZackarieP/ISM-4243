@@ -14,6 +14,46 @@
 
 }
 
+.column {
+    text-align: center;
+    float: left;
+    width: 75%;
+    padding: 0px;
+    height: 100%;
+}
+
+.column2 {
+    text-align: center;
+    float: right;
+    width: 23%;
+    height: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: white;
+}
+
+.SectionsR {
+    border: grey;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-image: image("lucasfilm.jpg");
+}
+
+#h1Right {
+    box-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    width: 100%;
+
+}
+
+#pRight {
+    background-color: white;
+}
+
 body {
     background-color: #040714;
 }
@@ -44,6 +84,7 @@ li a:hover {
 }
 
 div>img {
+    width: 23%;
     float: left;
     display: grid;
     grid-template-columns: auto auto auto auto;
