@@ -1,12 +1,12 @@
-*{
-padding:0px;
-margin: 0px;
-color:black;
-font-family: 'Mouse Memoirs', sans-serif;
-box-sizing: border-box;
+* {
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-family: 'Mouse Memoirs', sans-serif;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background: url("/HomePage/disney.gif");
     width: 100%;
     height: 100vh;
@@ -16,22 +16,48 @@ body{
     z-index: -1;
     padding: 10px 11px;
 }
-.box{
+
+.box {
     width: 400px;
     height: auto;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: white;
 }
-.innerbox{
-padding:20px;
+
+.innerbox {
+    padding: 20px;
 }
-.box h1,h2,h3,h4,h5{
+
+.box h1,
+h2,
+h3,
+h4,
+h5 {
     text-align: center;
     margin: 5px 0px;
 }
-input[type="text"], input[type="text"],input[type="text"],input[type="text"],input[type="password"],input[type="password"],input[type="submit"]{
+
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="password"],
+input[type="password"],
+input[type="submit"] {
     width: 95%;
-    padding:10px 0px;
+    padding: 10px 0px;
     margin: 10px 0px;
-    
+
+}
+
+footer {
+    width: 100%;
+    background-color: #2C2E3A;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
 }
