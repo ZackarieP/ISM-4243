@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tvshows.css">
     <script src="/StickyNavBar/stickyNav.js"></script>
+    <script src="/BackButton.js"></script>
     <link rel="stylesheet" href="/StickyNavBar/stickyNav.css">
     <title>TV Shows</title>
   </head>
@@ -23,7 +24,7 @@
         <li><a href="/ContentPage/Movies/movies.html">Movies</a></li>
         <li><a href="/ContentPage/watchlist/watchlist.html">Watchlist</a></li>
         <li><a href="/ContentPage/contentPage.html">Home</a></li>
-
+        <button onclick="goBack()">Go Back</button>
       </ul>
     </nav>
 
@@ -41,14 +42,6 @@
         <img src="/ContentPage/TVShows/showImages/10.jfif">
         <img src="/ContentPage/TVShows/showImages/11.jfif">
         <img src="/ContentPage/TVShows/showImages/12.jfif">
-        <img src="/ContentPage/TVShows/showImages/13.jfif">
-        <img src="/ContentPage/TVShows/showImages/14.jfif">
-        <img src="/ContentPage/TVShows/showImages/15.jfif">
-        <img src="/ContentPage/TVShows/showImages/16.jfif">
-        <img src="/ContentPage/TVShows/showImages/17.jfif">
-        <img src="/ContentPage/TVShows/showImages/18.jfif">
-        <img src="/ContentPage/TVShows/showImages/19.jfif">
-        <img src="/ContentPage/TVShows/showImages/20.jfif">
       </div>
 
       <!--This is the far right column-->
@@ -85,6 +78,12 @@
               messageBox.innerHTML = "";
               messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
             }
+
+            //Script for the back button
+            function goBack() {
+              window.history.back();
+            }
+            
 
           </script>
 
