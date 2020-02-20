@@ -87,3 +87,15 @@
         margin: 40px auto;
     }
 }
+
+footer {
+    width: 100%;
+    background-color: #2C2E3A;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
