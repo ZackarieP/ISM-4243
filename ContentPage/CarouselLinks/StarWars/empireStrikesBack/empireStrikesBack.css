@@ -1,0 +1,74 @@
+* {
+    cursor: url(LinkSelect.cur), default;
+    font-family: 'Mouse Memoirs', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: #040714;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.movie-details {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.movie-details>p {
+    width: 40%;
+    font-size: 18px;
+}
+
+table {
+    margin-top: 20px;
+    border-style: solid;
+    width: 80%;
+    font-size: 20px;
+
+}
+
+th {
+    font-weight: 900;
+}
+
+td>a {
+    color: red;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+    background-color: #2C2E3A;
+}
+
+td>a:hover {
+    color: aqua;
+}
