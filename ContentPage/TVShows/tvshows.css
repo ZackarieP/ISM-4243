@@ -114,3 +114,14 @@ img:hover {
 img::after {
     transition: border 300ms ease-out 0s;
 }
+
+footer {
+    width: 100%;
+    background-color: #2C2E3A;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
