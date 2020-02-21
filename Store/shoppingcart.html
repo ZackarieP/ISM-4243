@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Shopping Cart</title>
     <script src="/BackButton.js"></script>
-    <link rel="stylesheet" href="/Store/Store.css">
+    <link rel="stylesheet" href="/Store/shoppingcart.css">
 </head>
-
 <body>
     <nav>
         <div class="navbar">
@@ -25,32 +23,37 @@
                 <button onclick="goBack()">Go Back</button>
             </ul>
         </div>
-        <div class="container">
-            <ul>
-                <li>
-                    <div class="title">Shirts</div>
-                </li>
-                <li>
-                    <div class="title">Pants</div>
-                </li>
-                <li>
-                    <div class="title">Jackets</div>
-                </li>
-                <li>
-                    <div class="title">Backpacks</div>
-                </li>
-                <li>
-                    <div class="title">Shoes</div>
-                </li>
-                <li>
-                    <div class="title">Hats</div>
-                </li>
-            </ul>
+    <div class="shopping-cart">
+        <div class="title">
+          Shopping Bag
         </div>
-
-        <footer>
-            <h2>@The Walt Disney Company</h2>
-        </footer>
+       
+        
+        
+          <div class="image">
+            <img src="/Store/starwars shirt.jfif"  alt="" />
+          </div>
+       
+          <div class="description">
+            <span>Star Wars Shirt</span>
+            <span>Black</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="/Store/plus button.jpg" style= "width: 10px; height: 10px;" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="/Store/minus sign.jpg" style="width: 10px; height: 10px;" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">$25</div>
+        </div>
+       
+       
+      </div>
+    
 </body>
-
 </html>

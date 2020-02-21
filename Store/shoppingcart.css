@@ -1,0 +1,48 @@
+body{
+    background-color: lightskyblue;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.title{
+    padding-left: 33%;
+    padding-top: 0%;
+}
+.image img{
+    height: 150px;
+    padding-left: 33%;
+    padding-top: 1%;
+}
+.description{
+    padding-left: 33%;
+    padding-top: 0%;
+}
+.quantity{
+    padding-left: 33%;
+    padding-top: 0%;
+} 
+.total-price{
+    padding-left: 38%;
+    padding-top: 0%;
+}
