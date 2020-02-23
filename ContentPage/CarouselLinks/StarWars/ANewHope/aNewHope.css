@@ -76,10 +76,23 @@ td>a:hover {
 footer {
     width: 100%;
     background-color: #2C2E3A;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
-    right: 0;
     bottom: 0;
+}
+
+.div-btn {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 0.5rem;
+    border: none;
+    /* margin-left: 20px;
+    margin-top: 20px; */
 }
