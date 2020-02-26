@@ -43,11 +43,7 @@ img:hover {
     /* Safari 3-8 */
     transform: scale(1.05);
     transition-duration: 300ms;
-    transition-timing-function: ease-out;
-}
-
-img::after {
-    transition: border 300ms ease-out 0s;
+    transition-timing-function: ease-in-out;
 }
 
 a>img {
@@ -62,10 +58,10 @@ a>img {
 footer {
     width: 100%;
     background-color: #2C2E3A;
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: absolute;
-    right: 0;
     bottom: 0;
 }
